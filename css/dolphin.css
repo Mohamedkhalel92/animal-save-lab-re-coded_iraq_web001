@@ -3,20 +3,28 @@ html {
 }
 
 #ring {
-  background: url(../images/water-ring.png) no-repeat top left;
-  width: 1200px;
-  height: 750px;
-  position: relative;
-  top: -10px;
-  left: -8px;
-  z-index: 1;
+  background : url(../images/water-ring.png) no-repeat top left;
+  width      : 1200px   ;
+  height     : 750px    ;
+  position   : relative ;
+  top        : -10px    ;
+  left       : -8px     ;
+  z-index    : 1        ;
 }
 
 #dolphin {
-  position: absolute;
-  top: 400px;
-  right: 0;
+  position : absolute ;
+  top      : 400px    ;
+  right    : 0        ;
 }
 
 /* Write your solution here */
-
+@media (min-width: 642px) and (max-width: 1090px) {
+  #dolphin {
+  position : absolute ;
+  top      : 0px      ;
+  right    : 200px    ;
+  
+  transform: rotate(180deg);
+  }
+}
